@@ -50,6 +50,7 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
 
   TextEditingController t1 = TextEditingController();
+  //creating list,we'll add our todos here.
   List todoList = [];
 //adding operation
   addTodo() {
@@ -74,7 +75,7 @@ class _HomePageState extends State<HomePage> {
         children: <Widget>[
           Expanded(
             child: ListView.builder(
-              itemCount: todoList.length,
+              itemCount: todoList.length, //indicates how many todos we have. 
               itemBuilder: (context, index) => ListTile(
                 title: Text(todoList[index]),
                 subtitle: Text("Do it as soon as possible!"),
