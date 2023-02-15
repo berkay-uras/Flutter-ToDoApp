@@ -82,9 +82,7 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
           ),
-          //TextField(
-           // controller: t1,
-         // ),
+       
           TextField(
             controller: t1,
             cursorColor: Colors.black,
