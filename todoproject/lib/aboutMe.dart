@@ -12,7 +12,6 @@ class AboutMe extends StatelessWidget {
         centerTitle: true,
       ),
       body: Container(
-
        child: Center(
          child: Column(
             children: [
@@ -20,25 +19,24 @@ class AboutMe extends StatelessWidget {
                 width: 300,
                 height: 200,
 
-                child: Text(
+                 child: Text(
                   "I am Berkay URAS.I am a computer engineering student at Istanbul Aydin University.I am always trying to do best and improve myself everytime.",
                   style: TextStyle(fontStyle: FontStyle.italic,color: Colors.grey,fontSize: 16),
-
                 ),
               ),
 
         SizedBox(
           width: 800,
           height: 100,
-          child:Image.asset(
+          child:Image.asset( 
             "image/berkayuras.png",
             alignment: Alignment.center,
-          ),
-        )
-
-       ],
+            ),
+          )
+        ],
        ),
-    )
-      ),);
+      )
+     ),
+    );
   }
 }
